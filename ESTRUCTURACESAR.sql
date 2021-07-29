@@ -91,11 +91,45 @@ CREATE TABLE Localidad(
     MunicipioID INT NOT NULL,
     LocalidadID INT NOT NULL,
     Nombre VARCHAR(500)NOT NULL,
-    Ambito
-    LatitudDecimal
-    LongitudDecimal
-    Altitud
-    PoblacionTotal
-    PoblacionMasculina
-    PoblacionFemenina
+    Ambito VARCHAR (500)NOT NULL,
+    LatitudDecimal decimal(12,8) NULL,
+    LongitudDecimal decimal(12,8) NULL,
+    Altitud INT NOT NULL,
+    PoblacionTotal INT,
+    PoblacionMasculina INT,
+    PoblacionFemenina INT,
 )
+INSERT INTO Localidad VALUES(01, 001, 0001, 'Aguascalientes', 'U', 21.879823, -102.29604700, 1878, 863893, 419168, 444725)
+INSERT INTO Localidad VALUES(01, 001, 0096, 'Agua Azul','R', 21.88375600, -102.35712200, 1861, 41, 24, 17)
+INSERT INTO Localidad VALUES(01, 001, 0100, 'Rancho Alegre', 'R', 21.85459900, -102.37274600, 1879, 0, 0, 0)
+INSERT INTO Localidad VALUES(01, 001, 0102, 'Los Arbolitos [Rancho]', 'R', 21.78018100, -102.35729500, 1861, 8, 0, 0)
+INSERT INTO Localidad VALUES(01, 001, 0104, 'Ardillas de Abajo (Las Ardillas)', 'R', 21.94506800, -102.19192100, 1989, 1, 0, 0)
+INSERT INTO Localidad VALUES(01, 001, 0106, 'Arellano', 'R', 21.80177300, -102.27395500, 1892, 1169, 613, 556)
+INSERT INTO Localidad VALUES(01, 001, 0112, 'Bajío los Vázquez', 'R', 21.74749400, -102.12481700, 1971, 41, 20, 21)
+INSERT INTO Localidad VALUES(01, 001, 0113, 'Bajío de Montoro', 'R', 21.75788300, -102.29013100, 1871, 0, 0, 0)
+INSERT INTO Localidad VALUES(01, 001, 0120, 'Buenavista de Peñuelas', 'R', 21.71914700, -102.29319500, 1871, 1054, 542, 512)
+INSERT INTO Localidad VALUES(0, 011, 0108, 'Ojo Caliente de Abajo', 'R', 27.68758600, -105.20188100, 1224, 111, 59, 52)
+INSERT INTO Localidad VALUES(0, 011, 0109, 'Ortegueño', 'R', 27.75797900, -105.16243500, 1215, 145, 75, 70)
+INSERT INTO Localidad VALUES(0, 011, 0112, 'Las Pailas', 'R', 28.21015400, -103.94659500, 1315, 0, 0, 0)
+INSERT INTO Localidad VALUES(0, 011, 0113, 'La Palma', 'R', 28.09672800, -104.40497800, 1356, 0, 0, 0)
+INSERT INTO Localidad VALUES(1, 085, 0388, 'La Calera', 'R', 19.74222200, -103.32277800, 1480, 0, 0, 0)
+INSERT INTO Localidad VALUES(1, 085, 0389, 'El Carrizalillo', 'R', 19.62115100, -103.30534000, 1100, 0, 0, 0)
+INSERT INTO Localidad VALUES(1, 085, 0390, 'La Casa de Cahuilo', 'R', 19.75735400, -103.18905600, 1166, 0, 0, 0)
+INSERT INTO Localidad VALUES(1, 085, 0391, 'El Cerrito', 'R', 19.62935400, -103.27400800, 1179, 28, 16, 12)
+INSERT INTO Localidad VALUES(1, 085, 0392, 'Cerro del Caracol', 'R', 19.59045900, -103.14668000, 1917, 0, 0, 0)
+INSERT INTO Localidad VALUES(1, 085, 0393, 'El Cobre', 'R', 19.77248300, -103.18407400, 1170, 0, 0, 0)
+INSERT INTO Localidad VALUES(1, 085, 0395, 'Corral de la Ganadera', 'R', 19.68784300, -103.22795100, 1140, 0, 0, 0)
+INSERT INTO Localidad VALUES(1, 038, 0731, 'San Jorge', 'R', 25.01869600, -99.75618100, 0502, 0, 0, 0)
+INSERT INTO Localidad VALUES(1, 038, 0732, 'Palomas', 'R', 25.10634500, -99.75012600, 0446, 0, 0, 0)
+INSERT INTO Localidad VALUES(1, 038, 0733, 'Paraíso', 'R', 25.15442600, -99.67768400, 0369, 0, 0, 0)
+INSERT INTO Localidad VALUES(1, 038, 0734, 'Lajitas', 'R', 24.98096900, -99.84658500, 0560, 0, 0, 0)
+INSERT INTO Localidad VALUES(1, 038, 0735, 'Santa Eduwiges', 'R', 24.97529200, -99.84780600, 0560, 0, 0, 0)
+INSERT INTO Localidad VALUES(2, 018, 2056, 'Ficus', 'R', 27.35389100, -109.95342400, 0033, 0, 0, 0)
+INSERT INTO Localidad VALUES(2, 018, 2059, 'Cuadra la Nogalera', 'R', 27.61520300, -109.93175600, 0035, 0, 0, 0)
+INSERT INTO Localidad VALUES(2, 018, 2064, 'Lázaro Ayala', 'R', 27.34555600, -109.93895100, 0038, 0, 0, 0)
+INSERT INTO Localidad VALUES(2, 018, 2065, 'Los Beltrán', 'R', 27.54169300, -109.92768400, 0040, 0, 0, 0)
+INSERT INTO Localidad VALUES(2, 018, 2068, 'Bloque 605', 'R', 27.42713300, -110.05996200, 0023, 0, 0, 0)
+INSERT INTO Localidad VALUES(2, 018, 2073, 'Ninguno', 'R', 27.37242400, -110.08654500, 0017, 0, 0, 0)
+
+DROP TABLE Localidad;
+SELECT * FROM Localidad
