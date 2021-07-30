@@ -131,5 +131,6 @@ INSERT INTO Localidad VALUES(2, 018, 2065, 'Los Beltrán', 'R', 27.54169300, -10
 INSERT INTO Localidad VALUES(2, 018, 2068, 'Bloque 605', 'R', 27.42713300, -110.05996200, 0023, 0, 0, 0)
 INSERT INTO Localidad VALUES(2, 018, 2073, 'Ninguno', 'R', 27.37242400, -110.08654500, 0017, 0, 0, 0)
 
-DROP TABLE Localidad;
+SELECT * FROM EntidadFederativa
+SELECT * FROM Municipio
 SELECT * FROM Localidad
